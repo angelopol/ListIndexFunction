@@ -1,15 +1,17 @@
-list = []
+def ListIndexFunction():
 
-while True:
+    list = []
 
-    list.append(input("type a word "))
+    while True:
 
-    while len(list) > 3:
+        list.append(input("type a word "))
 
-        try:
+        while len(list) > 3:
 
-            print(list.index(input("search a entered word ")))
+            try:
 
-        except:
+                print(list.index(input("search a entered word ")))
 
-            print("the word is not registered in the list")
+            except:
+
+                print("the word is not registered in the list")
